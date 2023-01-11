@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "id": "9cb1a676-5d18-4cf4-8434-91d2cdea943c",
+  "name": "Eastwind_2",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "targetDatabases": [
+      {
+        "schemas": [],
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:sqlserver://localhost;databaseName=Eastwind;encrypt=false;integratedSecurity=true;trustServerCertificate=true"
+        }
+      }
+    ]
+  }
+}
