@@ -79,7 +79,7 @@ jobs:
           name: flyway-build-artifact
           path: Artifact_Files/Migration/
  
-  prod-preparation:
+ # prod-preparation:
       name: Production Deployment Preparation - Report Creation
       # The type of runner that the job will run on
       runs-on: self-hosted
